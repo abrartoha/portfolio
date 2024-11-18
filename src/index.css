@@ -4,7 +4,7 @@
 
 @media (max-width: 768px) {
   :root {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -45,6 +45,7 @@ ul {
   overflow: auto;
   transition: transform 0.3s ease;
   padding: 20px;
+  z-index: 1;
 }
 
 .drawer.open {

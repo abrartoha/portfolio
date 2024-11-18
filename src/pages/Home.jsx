@@ -4,7 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 export default function Home() {
   return (
     <>
-      <main className={classes.main + " d-flex justify-content-between"}>
+      <main className={classes.main}>
         <section className={classes.leftSection}>
           <p className="display-6 fw-bolder">
             Hello! <br></br>I'm{" "}

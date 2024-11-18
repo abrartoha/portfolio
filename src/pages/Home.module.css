@@ -1,5 +1,7 @@
 .main {
   padding: 6rem 5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .skills {
@@ -83,4 +85,15 @@
 
 .iconLinks {
   color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 6rem 0;
+  }
+  .leftSection {
+    width: 80vw;
+    margin: 0 auto;
+  }
 }
