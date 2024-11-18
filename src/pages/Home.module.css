@@ -96,4 +96,9 @@
     width: 80vw;
     margin: 0 auto;
   }
+  .rightBox {
+    padding: 4rem 1rem;
+    width: 80vw;
+    margin: 0 auto;
+  }
 }
