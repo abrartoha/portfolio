@@ -1,0 +1,52 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  overflow: auto;
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+.drawer.open {
+  transform: translateX(250px); /* Slide into view */
+}
+
+.drawer-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .drawer {
+    transform: translateX(0); /* Visible for mobile */
+  }
+
+  .drawer-toggle {
+    display: block; /* Ensure toggle button shows on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .drawer {
+    display: none; /* Hide drawer on larger screens */
+  }
+}

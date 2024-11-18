@@ -1,0 +1,89 @@
+:root {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+body {
+  background: #6441a5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a0845,
+    #371478
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #070124,
+    #270861
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white !important;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  overflow: auto;
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+.drawer.open {
+  transform: translateX(250px); /* Slide into view */
+}
+
+.drawer-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.close-btn {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .drawer {
+    transform: translateX(0); /* Visible for mobile */
+  }
+
+  .drawer-toggle {
+    display: block; /* Ensure toggle button shows on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .drawer {
+    display: none; /* Hide drawer on larger screens */
+  }
+}
